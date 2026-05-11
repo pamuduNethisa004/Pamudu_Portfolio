@@ -1,0 +1,172 @@
+/* Hero.css */
+
+.hero {
+  min-height:      100vh;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  position:        relative;
+  overflow:        hidden;
+  padding:         120px 60px 60px;
+}
+
+/* Background grid */
+.hero__grid {
+  position: absolute;
+  inset:    0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Blue glow */
+.hero__glow {
+  position:   absolute;
+  width:      600px;
+  height:     600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  top:        50%;
+  left:       50%;
+  transform:  translate(-50%, -60%);
+  pointer-events: none;
+}
+
+/* Content */
+.hero__content {
+  text-align: center;
+  position:   relative;
+  z-index:    2;
+  max-width:  900px;
+}
+
+/* Badge */
+.hero__badge {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             8px;
+  padding:         6px 16px;
+  border:          1px solid var(--border-blue);
+  border-radius:   100px;
+  background:      rgba(59, 130, 246, 0.06);
+  font-size:       0.78rem;
+  letter-spacing:  0.12em;
+  text-transform:  uppercase;
+  color:           var(--blue-light);
+  margin-bottom:   32px;
+  animation:       fadeDown 0.8s ease both;
+}
+.hero__badge-dot {
+  width:        7px;
+  height:       7px;
+  border-radius: 50%;
+  background:   #22c55e;
+  box-shadow:   0 0 8px #22c55e;
+  animation:    pulse 2s infinite;
+}
+
+/* Name */
+.hero__name {
+  font-family:    var(--font-display);
+  font-size:      clamp(3.5rem, 9vw, 7.5rem);
+  font-weight:    800;
+  line-height:    1;
+  letter-spacing: -0.03em;
+  margin-bottom:  16px;
+  animation:      fadeUp 0.9s ease 0.1s both;
+}
+.hero__name-first { color: var(--white); }
+.hero__name-last {
+  color:               transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.3);
+}
+
+/* Role */
+.hero__role {
+  font-family:    var(--font-display);
+  font-size:      clamp(1rem, 2.5vw, 1.5rem);
+  font-weight:    600;
+  color:          var(--muted);
+  margin-bottom:  20px;
+  letter-spacing: 0.04em;
+  animation:      fadeUp 0.9s ease 0.2s both;
+}
+.hero__role-text { color: var(--blue-light); }
+.hero__cursor {
+  opacity:   0.5;
+  animation: pulse 1s infinite;
+}
+
+/* Tagline */
+.hero__tagline {
+  color:         var(--muted);
+  font-size:     1.05rem;
+  line-height:   1.75;
+  max-width:     540px;
+  margin:        0 auto 40px;
+  animation:     fadeUp 0.9s ease 0.3s both;
+}
+
+/* Actions */
+.hero__actions {
+  display:         flex;
+  gap:             16px;
+  justify-content: center;
+  flex-wrap:       wrap;
+  animation:       fadeUp 0.9s ease 0.4s both;
+}
+
+/* Socials */
+.hero__socials {
+  display:         flex;
+  gap:             20px;
+  justify-content: center;
+  margin-top:      48px;
+  animation:       fadeUp 0.9s ease 0.5s both;
+}
+.hero__social-icon {
+  width:           42px;
+  height:          42px;
+  border:          1px solid var(--border);
+  border-radius:   50%;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  color:           var(--muted);
+  transition:      all 0.25s;
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+}
+.hero__social-icon:hover {
+  border-color: var(--blue);
+  color:        var(--blue-light);
+  background:   var(--blue-glow);
+  transform:    translateY(-3px);
+}
+
+/* Scroll hint */
+.hero__scroll-hint {
+  position:        absolute;
+  bottom:          40px;
+  left:            50%;
+  transform:       translateX(-50%);
+  display:         flex;
+  flex-direction:  column;
+  align-items:     center;
+  gap:             8px;
+  color:           var(--faint);
+  font-size:       0.72rem;
+  letter-spacing:  0.15em;
+  text-transform:  uppercase;
+  animation:       fadeUp 1s ease 1s both;
+}
+.hero__scroll-line {
+  width:      1px;
+  height:     48px;
+  background: linear-gradient(to bottom, transparent, var(--blue));
+  animation:  scrollPulse 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 100px 24px 60px; }
+}

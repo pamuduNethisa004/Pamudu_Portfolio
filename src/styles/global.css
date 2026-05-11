@@ -1,0 +1,165 @@
+/* ============================================================
+   global.css — Base styles, CSS variables, resets
+   ============================================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:            #050810;
+  --surface:       rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.08);
+  --border:        rgba(255, 255, 255, 0.08);
+  --border-blue:   rgba(59, 130, 246, 0.4);
+  --blue:          #3b82f6;
+  --blue-light:    #60a5fa;
+  --blue-glow:     rgba(59, 130, 246, 0.15);
+  --white:         #ffffff;
+  --muted:         rgba(255, 255, 255, 0.5);
+  --faint:         rgba(255, 255, 255, 0.12);
+  --font-display:  'Syne', sans-serif;
+  --font-body:     'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:   var(--bg);
+  color:        var(--white);
+  font-family:  var(--font-body);
+  overflow-x:   hidden;
+  cursor:       none;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar         { width: 4px; }
+::-webkit-scrollbar-track   { background: var(--bg); }
+::-webkit-scrollbar-thumb   { background: var(--blue); border-radius: 2px; }
+
+/* ── Scroll Reveal ────────────────────────────────────────── */
+.reveal {
+  opacity:    0;
+  transform:  translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity:   1;
+  transform: translateY(0);
+}
+
+/* ── Shared Animations ────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1; }
+}
+
+/* ── Shared Section Styles ────────────────────────────────── */
+section {
+  padding:  100px 60px;
+  position: relative;
+}
+
+.section-label {
+  font-size:      0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color:          var(--blue-light);
+  margin-bottom:  12px;
+  display:        flex;
+  align-items:    center;
+  gap:            12px;
+}
+.section-label::before {
+  content:    '';
+  width:      32px;
+  height:     1px;
+  background: var(--blue);
+}
+
+.section-title {
+  font-family:    var(--font-display);
+  font-size:      clamp(2rem, 4vw, 3rem);
+  font-weight:    800;
+  letter-spacing: -0.02em;
+  margin-bottom:  60px;
+  line-height:    1.1;
+}
+.section-title span {
+  color:               transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+}
+
+/* ── Shared Buttons ───────────────────────────────────────── */
+.btn-primary {
+  padding:       13px 32px;
+  background:    var(--blue);
+  color:         var(--white);
+  border:        none;
+  border-radius: 6px;
+  font-family:   var(--font-body);
+  font-size:     0.9rem;
+  font-weight:   500;
+  cursor:        pointer;
+  transition:    all 0.25s;
+  box-shadow:    0 0 30px rgba(59, 130, 246, 0.3);
+  text-decoration: none;
+  display:       inline-block;
+}
+.btn-primary:hover {
+  background: var(--blue-light);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.5);
+  transform:  translateY(-2px);
+}
+
+.btn-outline {
+  padding:        13px 32px;
+  background:     transparent;
+  color:          var(--white);
+  border:         1px solid var(--border);
+  border-radius:  6px;
+  font-family:    var(--font-body);
+  font-size:      0.9rem;
+  font-weight:    500;
+  cursor:         pointer;
+  transition:     all 0.25s;
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  display:        inline-block;
+}
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background:   var(--surface-hover);
+  transform:    translateY(-2px);
+}
+
+/* ── Shared Skill Pills ───────────────────────────────────── */
+.skill-pill {
+  padding:      4px 12px;
+  background:   rgba(59, 130, 246, 0.1);
+  border:       1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 4px;
+  font-size:    0.78rem;
+  color:        var(--blue-light);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  section { padding: 70px 24px; }
+}
