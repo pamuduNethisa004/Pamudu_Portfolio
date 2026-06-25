@@ -32,9 +32,6 @@ function Contact() {
           <a className="contact__social-btn" href={DATA.linkedin} target="_blank" rel="noreferrer">
             <LinkedinIcon size={16} /> LinkedIn
           </a>
-          <a className="contact__social-btn" href={DATA.twitter} target="_blank" rel="noreferrer">
-            <TwitterIcon size={16} /> Twitter
-          </a>
         </div>
       </div>
     </section>

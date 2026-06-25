@@ -11,7 +11,6 @@ const DATA = {
 
   // Roles that cycle in the typewriter on the hero
   roles: [
-    "Software Engineer",
     "Full Stack Developer",
     "UI/UX Enthusiast",
     "Problem Solver",
@@ -20,18 +19,16 @@ const DATA = {
   badge: "Available for Internships",
 
   tagline:
-    "Software Engineering undergraduate — building modern web apps, AI tools, and everything in between.",
+    "Software Engineering undergraduate with an interest in web development, UI/UX, and full-stack technologies.",
 
   // ── Contact & Socials ─────────────────────────────────────
-  email: "pamudu@example.com",           // ← your real email
-  github: "https://github.com/yourname", // ← your GitHub URL
-  linkedin: "https://linkedin.com/in/yourname", // ← your LinkedIn
-  twitter: "https://twitter.com/yourname",      // ← or remove
+  email: "pamudunj2022@gmail.com",           
+  github: "https://github.com/pamuduNethisa004", 
+  linkedin: "https://www.linkedin.com/in/pamudu-jayathunge/", 
 
   // ── About Section ─────────────────────────────────────────
   about: [
-    "I'm a passionate developer with a keen eye for design and a love for creating impactful digital experiences. I specialize in building modern, responsive web applications that solve real-world problems.",
-    "Currently pursuing my degree in Software Engineering, I enjoy exploring the intersection of AI and web development to create intelligent, user-centered solutions.",
+   "I'm a Software Engineering undergraduate with an interest in web development and technology. I enjoy learning new skills, building practical projects, and improving my knowledge through hands-on experience.",
   ],
 
   aboutTags: [
@@ -39,13 +36,12 @@ const DATA = {
     "UI/UX Enthusiast",
     "Problem Solver",
     "Open Source Fan",
-    "AI Curious",
   ],
 
   stats: [
-    { number: "10+", label: "Projects Completed" },
-    { number: "3+",  label: "Years of Coding" },
-    { number: "5+",  label: "Technologies Mastered" },
+    { number: "7+", label: "Projects Completed" },
+    { number: "2+",  label: "Years of Coding" },
+    { number: "3+",  label: "Technologies Mastered" },
   ],
 
   // ── Skills Section ────────────────────────────────────────
@@ -58,87 +54,88 @@ const DATA = {
     {
       icon: "⚙️",
       title: "Backend",
-      pills: ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
+      pills: ["Node.js", "Python"],
     },
     {
       icon: "🗄️",
       title: "Database",
-      pills: ["MongoDB", "PostgreSQL", "Firebase", "Supabase"],
+      pills: ["MongoDB", "Firebase"],
     },
     {
       icon: "🛠️",
       title: "Tools & DevOps",
-      pills: ["Git", "GitHub", "Docker", "Vercel", "Netlify"],
-    },
-    {
-      icon: "🤖",
-      title: "AI / ML",
-      pills: ["Python", "TensorFlow", "LangChain", "OpenAI API"],
+      pills: ["Git", "GitHub"],
     },
     {
       icon: "📱",
       title: "Other",
-      pills: ["Figma", "Agile", "Linux", "Bash"],
+      pills: ["Figma"],
     },
   ],
 
   // ── Projects Section ──────────────────────────────────────
   projects: [
+    
     {
       emoji: "🏡",
-      title: "Estate Agent App",
-      desc: "A full-featured real estate platform with property listings, search filters, and agent management built with React and Node.js.",
+      title: "3D PRINTING MARKETPLACE PLATFORM (GROUP PROJECT)",
+      desc: "A collaborative 3D printing marketplace connecting customers, designers, and service providers. Built features including real-time chat, order management, designer dashboards, and interactive 3D UI elements.",
       tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      github: "https://github.com/yourname/estate-agent",
-      live: "#",
+      github: "https://github.com/Pawani-Nethmini/MODELLE---SDGP.git",
+      live: "https://www.modelle.lk",
     },
     {
       emoji: "🤖",
-      title: "AI Chat Assistant",
-      desc: "An intelligent chatbot powered by OpenAI API with context memory, multi-turn conversations, and a sleek modern UI.",
-      tech: ["Next.js", "OpenAI", "TypeScript", "Supabase"],
-      github: "#",
-      live: "#",
+      title: "PROPERTY SEARCH WEB APPLICATION",
+      desc: "Built a modern property search web app with dynamic filtering, interactive property pages, and a responsive user interface using React.",
+      tech: ["React", "JavaScript", "HTML/CSS"],
+      github: "https://github.com/pamuduNethisa004/Estate_agent_react_app.git",
     },
     {
       emoji: "📊",
-      title: "Portfolio Tracker",
-      desc: "A personal finance dashboard for tracking investment portfolios in real-time with beautiful data visualizations.",
-      tech: ["React", "Python", "PostgreSQL", "Chart.js"],
-      github: "#",
-      live: "#",
+      title: "SMART CAMPUS SENSOR & ROOM MANAGEMENT API",
+      desc: "Built a RESTful API for smart campus room and IoT sensor management, featuring room administration, sensor tracking, and environmental data monitoring using JAX-RS and Apache Tomcat.",
+      tech: ["Java"],
+      github: "https://github.com/pamuduNethisa004/jaxrs-smart-campus-api.git",
+    },
+    {
+      emoji: "📊",
+      title: "CLIMATE AWARENESS WEB APPLICATION (GROUP PROJECT)",
+      desc: "An educational web application promoting climate awareness through interactive data visualizations, sustainability insights, and a responsive user-friendly design.",
+      tech: ["Java", "HTML", "CSS"],
+      github: "https://github.com/pamuduNethisa004/Climate-Changers-.git",
+    },
+     {
+      emoji: "📊",
+      title: "TRAFFIC INSIGHTS AND VISUALIZATION SYSTEM",
+      desc: "A Python-based traffic analysis system that processes and visualizes vehicle flow, traffic patterns, and weather data to provide meaningful insights from CSV datasets.",
+      tech: ["Python"],
+    },
+    {
+      emoji: "📊",
+      title: "PLATFORM FOR CONSTRUCTION",
+      desc: "Designed a construction industry talent platform with intuitive Figma prototypes, focusing on seamless networking and recruitment experiences.",
+      tech: ["Python"],
     },
   ],
 
   // ── Education ─────────────────────────────────────────────
   education: [
     {
-      date: "2023 – Present",
-      title: "Bachelor of Engineering in Software Engineering",
-      org: "Your University Name",       // ← update
-      desc: "Focusing on Software Engineering, Algorithms & Data Structures, Machine Learning, and Full-Stack Development.",
-    },
-    {
-      date: "2011 – 2023",
-      title: "Primary / Secondary Education",
-      org: "Your School Name",           // ← update
-      desc: "Completed A/L examinations with strong results in Mathematics and Computer Science.",
-    },
-  ],
-
-  // ── Experience ────────────────────────────────────────────
-  experience: [
-    {
       date: "2024 – Present",
-      title: "Open Source Contributor",
-      org: "GitHub",
-      desc: "Actively contributing to open-source projects, fixing bugs, adding features, and improving documentation.",
+      title: "B.SC. (HONS) COMPUTER SCIENCE",
+      org: "UNIVERSITY OF WESTMINSTER, Collabaration with IIT",
     },
     {
-      date: "2023 – Present",
-      title: "Freelance Web Developer",
-      org: "Self-employed",
-      desc: "Designing and developing responsive websites for local clients — handling everything from UI/UX to deployment.",
+      date: "2023 - 2024",
+      title: "SOFTWARE ENGINEERING FOUNDATION PROGRAM",
+      org: "INFORMATICS INSTITUTE OF TECHNOLOGY",
+    },
+    {
+      date: "2012 – 2023",
+      title: "GRADE 1 – GRADE 11 (ORDINARY LEVEL)",
+      org: "Rahula College. Matara",           
+      desc: "Completed O/L examination.",
     },
   ],
 };

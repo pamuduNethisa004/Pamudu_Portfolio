@@ -36,14 +36,6 @@ function Experience() {
               <TimelineItem key={i} item={item} delay={i * 0.1} />
             ))}
           </div>
-
-          {/* Experience column */}
-          <div className="experience__col">
-            <h3 className="experience__col-title">💼 Experience</h3>
-            {DATA.experience.map((item, i) => (
-              <TimelineItem key={i} item={item} delay={i * 0.1} />
-            ))}
-          </div>
         </div>
       </div>
     </section>
