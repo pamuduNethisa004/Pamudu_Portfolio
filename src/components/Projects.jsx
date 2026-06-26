@@ -24,7 +24,15 @@ function Projects() {
             >
               {/* Thumbnail */}
               <div className="project-card__thumb">
-                <span className="project-card__emoji">{project.emoji}</span>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-card__image"
+                  />
+                ) : (
+                  <span className="project-card__emoji">{project.emoji}</span>
+                )}
               </div>
 
               {/* Body */}

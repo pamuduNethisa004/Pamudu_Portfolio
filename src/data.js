@@ -77,7 +77,7 @@ const DATA = {
   projects: [
     
     {
-      emoji: "🏡",
+      image: "/images/3dprinting.jpg",
       title: "3D PRINTING MARKETPLACE PLATFORM (GROUP PROJECT)",
       desc: "A collaborative 3D printing marketplace connecting customers, designers, and service providers. Built features including real-time chat, order management, designer dashboards, and interactive 3D UI elements.",
       tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
