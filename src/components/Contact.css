@@ -18,7 +18,7 @@
 
 .contact__email {
   font-family:    var(--font-display);
-  font-size:      clamp(1.5rem, 4vw, 2.5rem);
+  font-size:      clamp(1.15rem, 4vw, 2.5rem);
   font-weight:    800;
   color:          var(--white);
   text-decoration: none;
@@ -27,6 +27,9 @@
   transition:     border-color 0.25s, color 0.25s;
   display:        inline-block;
   margin-bottom:  40px;
+  max-width:      100%;
+  overflow-wrap:  break-word;
+  word-break:     break-word;
 }
 .contact__email:hover {
   color:        var(--blue-light);

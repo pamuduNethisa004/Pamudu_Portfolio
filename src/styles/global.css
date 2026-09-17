@@ -163,3 +163,15 @@ section {
 @media (max-width: 768px) {
   section { padding: 70px 24px; }
 }
+
+@media (max-width: 480px) {
+  section { padding: 56px 18px; }
+  .section-title { margin-bottom: 40px; }
+}
+
+/* Touch devices have no mouse pointer — fall back to the native cursor
+   instead of the custom dot/ring (see Cursor.jsx), which only tracks
+   mousemove and would otherwise sit frozen in the top-left corner. */
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto; }
+}

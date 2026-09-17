@@ -11,6 +11,10 @@
   gap:                   20px;
 }
 
+@media (max-width: 360px) {
+  .skills__grid { grid-template-columns: 1fr; }
+}
+
 .skills__card {
   padding:         28px;
   border:          1px solid var(--border);

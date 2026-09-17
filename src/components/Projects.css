@@ -15,6 +15,10 @@
   gap:                   24px;
 }
 
+@media (max-width: 480px) {
+  .projects__grid { grid-template-columns: 1fr; }
+}
+
 /* Card */
 .project-card {
   border:          1px solid var(--border);
