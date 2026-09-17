@@ -22,3 +22,11 @@
   z-index:          9998;
   transition:       left 0.12s ease, top 0.12s ease;
 }
+
+/* Touch devices never fire mousemove, so the dot/ring would otherwise
+   sit frozen at their default (0,0) position in the top-left corner. */
+@media (hover: none), (pointer: coarse) {
+  #cursor-dot, #cursor-ring {
+    display: none;
+  }
+}
